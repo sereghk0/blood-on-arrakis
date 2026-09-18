@@ -1,0 +1,464 @@
+[
+  {
+    "id": "_meta",
+    "name": "Кровь на Арракисе v0.9 — портреты",
+    "author": "Homebrew"
+  },
+  {
+    "id": "dune_paul",
+    "name": "Пол Атрейдес",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "В первую ночь узнай 1 персонажа, который есть в игре. Со второй ночи выбирай игрока. Начиная с третьей ночи узнай, одной ли он команды с игроком, выбранным прошлой ночью.",
+    "firstNight": 3,
+    "otherNight": 3,
+    "firstNightReminder": "Покажи жетон 1 персонажа, который действительно есть в игре.",
+    "otherNightReminder": "Во 2-ю ночь: Пол выбирает игрока, информации не получает. С 3-й ночи: Пол выбирает игрока; сообщи, одной ли он команды с предыдущей целью. Перенеси напоминание «Предыдущий».",
+    "reminders": [
+      "Предыдущий"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/pol_atreides.png"
+  },
+  {
+    "id": "dune_jessica",
+    "name": "Леди Джессика",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь выбери другого игрока. До следующего заката он получает правдивую информацию, даже если пьян или отравлен. Нельзя выбирать одного игрока две ночи подряд.",
+    "firstNight": 2,
+    "otherNight": 2,
+    "firstNightReminder": "Джессика выбирает другого игрока. Поставь «Истина».",
+    "otherNightReminder": "Джессика выбирает другого игрока, не выбранного прошлой ночью. Поставь «Истина».",
+    "reminders": [
+      "Истина",
+      "Прошлая цель"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/lady_jessica.png"
+  },
+  {
+    "id": "dune_chani",
+    "name": "Чани",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь* выбери 2 других живых игроков. Один из них защищён от Демона этой ночью.",
+    "firstNight": 0,
+    "otherNight": 20,
+    "firstNightReminder": "",
+    "otherNightReminder": "Чани выбирает 2 других живых игроков. Рассказчик определяет одного защищённого от Демона.",
+    "reminders": [
+      "Выбран",
+      "Выбран",
+      "Защищён"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/chani.png"
+  },
+  {
+    "id": "dune_duncan",
+    "name": "Дункан Айдахо",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь узнай всех игроков, которые должны умереть. Можешь выбрать одного: он не умирает, но ты можешь умереть вместо него.",
+    "firstNight": 0,
+    "otherNight": 31,
+    "firstNightReminder": "",
+    "otherNightReminder": "Покажи Дункану всех игроков, которые после остальных эффектов должны умереть. Он может выбрать одного: тот не умирает; Дункан может умереть вместо него.",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/duncan_idaho.png"
+  },
+  {
+    "id": "dune_gurney",
+    "name": "Гурни Халлек",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь* выбери другого живого игрока, которого ещё не выбирал. Если завтра он номинирует злого игрока, следующей ночью узнай об этом.",
+    "firstNight": 0,
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "otherNightReminder": "Сначала сообщи результат предыдущей цели. Затем Гурни выбирает другого живого игрока, которого ещё не выбирал.",
+    "reminders": [
+      "Цель"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/gurney_halleck.png"
+  },
+  {
+    "id": "dune_thufir",
+    "name": "Туфир Хават",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь выбери 3 игроков. Узнай, сколько разных типов персонажей среди них: Горожанин, Изгой, Приспешник или Демон.",
+    "firstNight": 5,
+    "otherNight": 5,
+    "firstNightReminder": "Туфир выбирает 3 игроков. Покажи число разных типов среди них.",
+    "otherNightReminder": "Туфир выбирает 3 игроков. Покажи число разных типов среди них.",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/tufir_hawat.png"
+  },
+  {
+    "id": "dune_yueh",
+    "name": "Доктор Юэ",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь* выбери другого живого игрока: он защищён от смерти этой ночью. Если это спасло ему жизнь, один из его живых соседей может умереть.",
+    "firstNight": 0,
+    "otherNight": 21,
+    "firstNightReminder": "",
+    "otherNightReminder": "Юэ выбирает другого живого игрока. Если его защита действительно предотвращает смерть, один живой сосед цели может умереть.",
+    "reminders": [
+      "Защищён"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/yue.png"
+  },
+  {
+    "id": "dune_leto",
+    "name": "Герцог Лето",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Один раз за игру днём публично потребуй суда над живым игроком. Сегодня номинировать можно только его. Если казнённый добрый, следующей ночью ты умираешь.",
+    "firstNight": 0,
+    "otherNight": 26,
+    "firstNightReminder": "",
+    "otherNightReminder": "Если на Лето стоит «Должен умереть», добавь его в список смертей этой ночью и затем сними напоминание.",
+    "reminders": [
+      "Суд",
+      "Должен умереть"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/leto.png"
+  },
+  {
+    "id": "dune_alia",
+    "name": "Алия",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь* узнай, был ли хотя бы один умерший сегодня игрок злым. Один раз за игру вместо этого узнай персонажа одного мёртвого игрока.",
+    "firstNight": 0,
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "otherNightReminder": "Сообщи, был ли среди умерших с прошлого рассвета злой. Либо, если одноразовая часть ещё доступна, Алия может вместо этого узнать персонажа одного мёртвого игрока.",
+    "reminders": [
+      "Использовано"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/alia_atreides.png"
+  },
+  {
+    "id": "dune_kynes",
+    "name": "Лиет-Кайнс",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь* выбери другого игрока. Если выбранный прошлой ночью игрок умер до следующего заката, узнай персонажа одного из его живых соседей.",
+    "firstNight": 0,
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "otherNightReminder": "Если прошлая цель умерла до заката, покажи персонажа одного из её живых соседей. Затем Кайнс выбирает новую цель.",
+    "reminders": [
+      "Цель"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/liet_kynes.png"
+  },
+  {
+    "id": "dune_ramallo",
+    "name": "Преподобная Мать Рамалло",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Один раз за игру ночью выбери живого игрока. Если он добрый — узнай его персонажа. Если злой — получи ложного персонажа.",
+    "firstNight": 8,
+    "otherNight": 8,
+    "firstNightReminder": "Если хочет использовать способность, Рамалло выбирает живого игрока; выдай соответствующего персонажа.",
+    "otherNightReminder": "Если способность не использована, Рамалло может выбрать живого игрока; выдай соответствующего персонажа.",
+    "reminders": [
+      "Использовано"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/ramallo.png"
+  },
+  {
+    "id": "dune_jamis",
+    "name": "Джамис",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Если тебя казнят, перед смертью выбери живого игрока. Этой ночью он защищён от Демона.",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "Защищён"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/jamis.png"
+  },
+  {
+    "id": "dune_hara",
+    "name": "Хара",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Один раз за игру ночью, после определения смертей, узнай всех умерших этой ночью. Можешь выбрать одного: сегодня он голосует как живой, не расходуя голос мёртвого.",
+    "firstNight": 0,
+    "otherNight": 33,
+    "firstNightReminder": "",
+    "otherNightReminder": "После окончательного определения смертей покажи Хара всех умерших этой ночью. Если использует способность, отметь выбранного мёртвого.",
+    "reminders": [
+      "Использовано",
+      "Голосует как живой"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/hara.png"
+  },
+  {
+    "id": "dune_lanville",
+    "name": "Ланвиль",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Первый раз, когда ты номинируешь Приспешника и его не казнят, этой ночью он пьян.",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "Сработало",
+      "Пьян"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/lanville.png"
+  },
+  {
+    "id": "dune_irulan",
+    "name": "Принцесса Ирулан",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "Каждую ночь выбери 2 других живых игроков: узнай, есть ли среди них злой. Нельзя выбирать одного игрока две ночи подряд. Ты не можешь голосовать. Если сегодня ты номинировала игрока, этой ночью информации не получаешь.",
+    "firstNight": 6,
+    "otherNight": 6,
+    "firstNightReminder": "Ирулан выбирает 2 других живых игроков. Сообщи, есть ли среди них злой. Отметь обе цели.",
+    "otherNightReminder": "Если Ирулан сегодня номинировала, информации нет. Иначе она выбирает 2 других живых игроков, не выбранных прошлой ночью; сообщи, есть ли среди них злой.",
+    "reminders": [
+      "Выбран",
+      "Выбран",
+      "Номинировала"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/irulan.png"
+  },
+  {
+    "id": "dune_fenring",
+    "name": "Граф Фенринг",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "Ты можешь регистрироваться как добрая или злая команда и как Горожанин, Изгой, Приспешник или Демон. Первый раз за игру, когда ты должен умереть, вместо тебя может умереть один из твоих живых соседей.",
+    "firstNight": 0,
+    "otherNight": 27,
+    "firstNightReminder": "",
+    "otherNightReminder": "Если Фенринг должен умереть и замена ещё не срабатывала, вместо него может умереть живой сосед.",
+    "reminders": [
+      "Смерть заменена"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/fenring.png"
+  },
+  {
+    "id": "dune_mapes",
+    "name": "Шадоут Мэйпс",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "Каждую ночь выбери другого живого игрока. Узнай, добрый ли он. Если выбираешь злого игрока, информация может быть ложной, а он узнаёт, что был выбран.",
+    "firstNight": 7,
+    "otherNight": 7,
+    "firstNightReminder": "Мэйпс выбирает другого живого игрока. Сообщи результат; если цель злая, информация может быть ложной и цель узнаёт о выборе.",
+    "otherNightReminder": "Мэйпс выбирает другого живого игрока. Сообщи результат; если цель злая, информация может быть ложной и цель узнаёт о выборе.",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/mapes.png"
+  },
+  {
+    "id": "dune_tuek",
+    "name": "Контрабандист Туек",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "Каждую ночь* выбери живого игрока. Если он умрёт этой ночью, один из его живых соседей пьян до следующего заката.",
+    "firstNight": 0,
+    "otherNight": 19,
+    "firstNightReminder": "",
+    "otherNightReminder": "Туек выбирает живого игрока. Если он умрёт этой ночью, отметь одного живого соседа как пьяного до следующего заката.",
+    "reminders": [
+      "Цель",
+      "Пьян"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/tuek.png"
+  },
+  {
+    "id": "dune_feyd",
+    "name": "Фейд-Раута",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "Каждую ночь* выбери игрока. Завтра, когда он впервые номинирует другого игрока, если тот добрый и сегодня не казнён, ночью он может умереть.",
+    "firstNight": 0,
+    "otherNight": 16,
+    "firstNightReminder": "",
+    "otherNightReminder": "Разреши возможную смерть от вчерашней ловушки, затем Фейд выбирает новую цель на завтра.",
+    "reminders": [
+      "Цель",
+      "Номинирован",
+      "Может умереть"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/feyd_rautha.png"
+  },
+  {
+    "id": "dune_piter",
+    "name": "Питер де Врис",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "Каждую ночь выбери игрока: он отравлен до следующего заката. Нельзя выбирать одного игрока две ночи подряд.",
+    "firstNight": 1,
+    "otherNight": 1,
+    "firstNightReminder": "Питер выбирает игрока: он отравлен до следующего заката.",
+    "otherNightReminder": "Сними прошлое отравление. Питер выбирает игрока, отличного от прошлой цели: он отравлен до следующего заката.",
+    "reminders": [
+      "Отравлен",
+      "Прошлая цель"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/piter_de_vries.png"
+  },
+  {
+    "id": "dune_mohiam",
+    "name": "Преподобная Мать Мохиам",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "Каждую ночь выбери игрока. Завтра, если он голосует при первой номинации дня, он отравлен до следующего рассвета.",
+    "firstNight": 9,
+    "otherNight": 17,
+    "firstNightReminder": "Мохиам выбирает игрока. Отметь цель.",
+    "otherNightReminder": "Мохиам выбирает игрока. Завтра, если он голосует при первой номинации, отрави его до рассвета.",
+    "reminders": [
+      "Цель",
+      "Отравлен"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/mohiam.png"
+  },
+  {
+    "id": "dune_margot",
+    "name": "Марго Фенринг",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "Каждую ночь выбери живого игрока, которого ещё не выбирала. Если завтра поговоришь с ним наедине, сообщи Рассказчику: узнаешь его персонажа, а он пьян до рассвета.",
+    "firstNight": 10,
+    "otherNight": 18,
+    "firstNightReminder": "Марго выбирает живого игрока, которого ещё не выбирала.",
+    "otherNightReminder": "Марго выбирает живого игрока, которого ещё не выбирала. Если завтра состоится заявленный приватный разговор, покажи Марго персонажа цели и сделай цель пьяной до рассвета.",
+    "reminders": [
+      "Цель",
+      "Пьян"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/margot_fenring.png"
+  },
+  {
+    "id": "dune_baron",
+    "name": "Барон Владимир Харконнен",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "Каждую ночь* выбери игрока: он умирает. Один из твоих живых соседей может быть отравлен.",
+    "firstNight": 0,
+    "otherNight": 24,
+    "firstNightReminder": "",
+    "otherNightReminder": "Барон выбирает игрока: он должен умереть. Один из живых соседей Барона может быть отравлен.",
+    "reminders": [
+      "Умирает",
+      "Отравлен"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/baron_harkonnen.png"
+  },
+  {
+    "id": "dune_shaddam",
+    "name": "Император Шаддам IV",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "Каждую ночь* выбери 3 живых игроков. Завтра Рассказчик объявляет их. Если сегодня ни один из них не был казнён, следующей ночью выбери 2 игроков: оба могут умереть.",
+    "firstNight": 0,
+    "otherNight": 24,
+    "firstNightReminder": "",
+    "otherNightReminder": "Если вчера ни один из объявленной тройки не был казнён, Шаддам сначала выбирает 2 игроков: оба могут умереть. Затем выбирает 3 живых игроков для нового указа; завтра объяви их.",
+    "reminders": [
+      "Указ",
+      "Указ",
+      "Указ",
+      "Может умереть",
+      "Может умереть"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/shaddam_iv.png"
+  },
+  {
+    "id": "dune_shaihulud",
+    "name": "Шай-Хулуд",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "Каждую ночь* выбери игрока: он умирает. Если вчера никого не казнили, вместо этого выбери 2 игроков: оба могут умереть.",
+    "firstNight": 0,
+    "otherNight": 24,
+    "firstNightReminder": "",
+    "otherNightReminder": "Если вчера была казнь, Шай-Хулуд выбирает 1 игрока: он умирает. Если казни не было, выбирает 2 игроков: оба могут умереть.",
+    "reminders": [
+      "Может умереть",
+      "Может умереть"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/shai_hulud.png"
+  },
+  {
+    "id": "dune_stilgar",
+    "name": "Стилгар",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "Каждую ночь выбери 2 других живых игроков. Узнай, одной ли они команды. Нельзя выбирать одного игрока две ночи подряд.",
+    "firstNight": 4,
+    "otherNight": 4,
+    "firstNightReminder": "Стилгар выбирает 2 других живых игроков. Сообщи, одной ли они команды. Отметь обе цели.",
+    "otherNightReminder": "Стилгар выбирает 2 других живых игроков, не выбранных прошлой ночью. Сообщи, одной ли они команды. Обнови обе цели.",
+    "reminders": [
+      "Выбран",
+      "Выбран"
+    ],
+    "remindersGlobal": [],
+    "setup": false,
+    "image": "https://raw.githubusercontent.com/sereghk0/blood-on-arrakis/main/icons/stilgar.png"
+  }
+]
